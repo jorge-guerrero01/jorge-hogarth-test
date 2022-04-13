@@ -1,0 +1,124 @@
+/* ------------- Hero ------------- */
+
+.hero {
+  display: flex;
+  height: 100%;
+}
+.hero-img {
+  width: 50%;
+  flex: 1;
+}
+.hero-space,
+.hero-space:active {
+  text-decoration: none;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/images/final-frontier_large_2x.jpg);
+  transition: all 0.3s;
+}
+.hero-space:hover {
+  text-decoration: none;
+  color: #fff;
+  width: 51%;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+.hero-moon {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/images/luna_large_2x.jpg);
+}
+.hero-copy {
+  position: relative;
+}
+
+/* ------------- Gallery ------------- */
+
+.gallery-headline {
+  margin-left: 100px;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+.gallery-row {
+  display: flex;
+}
+.gallery-photos {
+  width: 80%;
+  margin: 30px auto;
+}
+.gallery-photo {
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+.photo-two,
+.photo-three,
+.photo-six,
+.photo-ten {
+  width: 130%;
+}
+.photo-seven {
+  width: 50%;
+}
+
+/* ------------- Timeline ------------- */
+
+.timeline-item {
+  flex: 2;
+  height: 100%;
+  margin: 10px;
+}
+.timeline-3 {
+  margin-top: -370px;
+}
+.timeline-5 {
+  margin-top: -96px;
+}
+
+/* ------------- Media Queries ------------- */
+
+/*0px — 480px: Mobile devices*/
+@media (max-width: 480px) {
+  .gallery-photos {
+    width: 90%;
+  }
+}
+
+/*481px — 768px: iPads, Tablets*/
+@media (max-width: 768px) {
+  .timeline-list div {
+    margin-top: 10px;
+  }
+  .gallery-row {
+    flex-direction: column;
+  }
+  .gallery-row img {
+    width: 100%;
+  }
+}
+
+/*769px — 991px: Small screens, laptops*/
+@media (max-width: 991px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .hero-space:hover {
+    width: 100%;
+  }
+  .timeline-list div {
+    margin-top: 10px;
+  }
+}
+
+/*992px — 1200px: Desktops, large screens*/
+@media (max-width: 1200px) {
+  .timeline-3 {
+    margin-top: -420px;
+  }
+}
